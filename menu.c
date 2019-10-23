@@ -18,22 +18,22 @@ int main()
 	setlocale (LC_ALL, "Portuguese");
 	int opcao;
 	do{
-// Esse é o Menu que o usuario irá Visualizar quando executar o programa	
+// Esse Ã© o Menu que o usuario irÃ¡ Visualizar quando executar o programa	
 		printf ("\n==================== MENU ======================\n\n"
-		"Escolha uma Opção\n"
-		"Opção - 1. Para saber se o numero é PAR ou não. \n"
-		"Opção - 2. Para calcular uma potência. \n"
-		"Opção - 3. Para calcular uma raiz. \n"
-		"Opção - 4. Para saber se o ano é bissexto. \n"
-		"Opção - 5. Para calcular a média ponderada das 3 notas. \n"
-		"Opção - 6. Para calcular a médias das notas e saber se são válidas. \n"
-		"Opção - 7. Para calcular o fatorial de um numero.\n"
-		"Opção - 8. Para verificar se um numero sendo primo ou não.\n"
-		"Opção - 9. Para imprimir a sequencia de fibo até um numero.\n"
-		"Opção - 10. Informe seu nome e sua matricula. \n\n"
+		"Escolha uma OpÃ§Ã£o\n"
+		"OpÃ§Ã£o - 1. Para saber se o numero Ã© PAR ou nÃ£o. \n"
+		"OpÃ§Ã£o - 2. Para calcular uma potÃªncia. \n"
+		"OpÃ§Ã£o - 3. Para calcular uma raiz. \n"
+		"OpÃ§Ã£o - 4. Para saber se o ano Ã© bissexto. \n"
+		"OpÃ§Ã£o - 5. Para calcular a mÃ©dia ponderada das 3 notas. \n"
+		"OpÃ§Ã£o - 6. Para calcular a mÃ©dias das notas e saber se sÃ£o vÃ¡lidas. \n"
+		"OpÃ§Ã£o - 7. Para calcular o fatorial de um numero.\n"
+		"OpÃ§Ã£o - 8. Para verificar se um numero sendo primo ou nÃ£o.\n"
+		"OpÃ§Ã£o - 9. Para imprimir a sequencia de fibo atÃ© um numero.\n"
+		"OpÃ§Ã£o - 10. Informe seu nome e sua matricula. \n\n"
 		"         DIGITE 0 PARA SAIR \n"                 );
 				
-		printf("\nOpção:");
+		printf("\nOpÃ§Ã£o:");
 		scanf("%d",&opcao);
 		
 		switch(opcao)
@@ -43,32 +43,32 @@ int main()
 				printf("Saiu!\n\n");
 				break;
 			}
-//Caso o usuario escolha a opção 1 esse programa executará
+//Caso o usuario escolha a opÃ§Ã£o 1 esse programa executarÃ¡
 			case 1:{
 				par();
 				break;
 			}
-//Caso escolha a opção 2 esse executará
+//Caso escolha a opÃ§Ã£o 2 esse executarÃ¡
 			case 2:{
 				potencia();
 				break;
 			}
-//Caso escolha a opção 3 esse executará
+//Caso escolha a opÃ§Ã£o 3 esse executarÃ¡
 			case 3:{
 				raiz();
 				break;
 			}
-//Caso escolha a opção 4 esse executará
+//Caso escolha a opÃ§Ã£o 4 esse executarÃ¡
 			case 4:{
 				ano();
 				break;
 			}
-//Caso escolha a opção 5 esse executará
+//Caso escolha a opÃ§Ã£o 5 esse executarÃ¡
 			case 5:{
 				media();
 				break;
 			}
-//Caso escolha a opção 6 esse executará
+//Caso escolha a opÃ§Ã£o 6 esse executarÃ¡
 			case 6:{
 				medias();
 				break;
@@ -92,12 +92,12 @@ int main()
 				matricula();
 				break;
 			}
-//Caso escolha uma opção que não esteja entre 1 e 9, exibirá este mensagem
+//Caso escolha uma opÃ§Ã£o que nÃ£o esteja entre 1 e 9, exibirÃ¡ este mensagem
 			default:
-				printf("Opção Invalido!\n\n");
+				printf("OpÃ§Ã£o Invalido!\n\n");
 				break;	
 		}
-//Enquanto o usuário não digitar 0 para sair, o MENU continua sendo exibido
+//Enquanto o usuÃ¡rio nÃ£o digitar 0 para sair, o MENU continua sendo exibido
 	}while (opcao != 0);
 }
 
@@ -108,10 +108,10 @@ int par(){
 		scanf("%d", &num1);
 //Processamento
 		if(num1 % 2 == 0){
-//Saída
-			printf("%d é PAR\n", num1);
+//SaÃ­da
+			printf("%d Ã© PAR\n", num1);
 		}else{	
-			printf("%d não é PAR\n", num1);
+			printf("%d nÃ£o Ã© PAR\n", num1);
 		}
 }
 int potencia(){
@@ -125,8 +125,8 @@ int potencia(){
 	scanf ("%d", &B);
 //Processamento	
 	resultado = pow (A, B);
-//Saída	
-	printf ("Valor da potência: %.3f\n", resultado);
+//SaÃ­da	
+	printf ("Valor da potÃªncia: %.3f\n", resultado);
 }
 int raiz(){
 	float A, resultado;
@@ -139,21 +139,21 @@ int raiz(){
 	scanf ("%d", &B);
 //Processamento
 	resultado = pow(A, 1./B);
-//Saída
+//SaÃ­da
 	printf ("Resultado da Raiz: %.3e\n", resultado);
 }
 int ano(){
 	int ano,bissexto;
 //Entrada		
-	printf("Digite um ano para saber se ele é bissexto: ");
+	printf("Digite um ano para saber se ele Ã© bissexto: ");
 	scanf ("%d", &ano);
 //Processamneto	
 	bissexto = ano%4;
-//Saída	
+//SaÃ­da	
 	if (bissexto == 0){
 		printf ("\nAno Bissexto\n");
 	}else{
-		printf ("\nNão é Bissexto\n");
+		printf ("\nNÃ£o Ã© Bissexto\n");
 	}
 }
 int media(){
@@ -163,11 +163,11 @@ int media(){
 	scanf ("%f %f %f",&n1, &n2, &n3);
 //Processamento		
 	media = (n1+n2+n3*2)/4;
-//Saída		
+//SaÃ­da		
 	if(media >= 6){
-		printf("Você passou com %0.2f de média\n", media);
+		printf("VocÃª passou com %0.2f de mÃ©dia\n", media);
 	}else{
-		printf("Voce foi reprovado com %0.2f de média", media);
+		printf("Voce foi reprovado com %0.2f de mÃ©dia", media);
 	}
 }
 int medias(){
@@ -176,12 +176,12 @@ int medias(){
 	printf ("Digite as 2 notas: ");
 	scanf ("%f %f",&n1, &n2);
 //Processamento
-//Os printf serão as saídas	
+//Os printf serÃ£o as saÃ­das	
 	if ((n1 >= 0) && (n1 <= 10) && (n2 >= 0) && (n2 <= 10)){
 		media = (n1 + n2)/ 2;
-		printf ("É válida! E a média é %0.2f\n", media);
+		printf ("Ã‰ vÃ¡lida! E a mÃ©dia Ã© %0.2f\n", media);
 	}else{
-		printf ("Não é válida\n");
+		printf ("NÃ£o Ã© vÃ¡lida\n");
 	}
 }
 int fatorial(){
@@ -252,7 +252,7 @@ int matricula(){
 				
 	printf ("Digite sua matricula: ");
 	scanf ("%d", &mtc);
-//Processamento/Saída		
-	printf ("Oi %s sua matricula em Hexadecimal é: %2X\n", nome, mtc);
+//Processamento/SaÃ­da		
+	printf ("Oi %s sua matricula em Hexadecimal Ã©: %2X\n", nome, mtc);
 }
 
